@@ -12,4 +12,3 @@ object Riddle2 {
         TODO()
     }
 }
-
