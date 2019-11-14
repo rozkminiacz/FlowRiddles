@@ -39,5 +39,7 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
       # run tests!
-      - run: gradle changeRiddleSources
       - run: gradle test
+
+      # lint
+      - run: gradle detekt
