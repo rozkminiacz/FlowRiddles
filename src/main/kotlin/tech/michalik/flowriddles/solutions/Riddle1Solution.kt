@@ -1,14 +1,17 @@
-package tech.michalik.flowriddles
+package tech.michalik.flowriddles.solutions
 
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
 
-object Riddle1 {
+object Riddle1Solution {
     /**
      * Transform the given [value] into an Flow that emits the value and then completes.
      *
      * Use case: You want to transform some value to the Kotlin Flow world.
      */
     fun solve(value: Int): Flow<Int> {
-        TODO()
+        return flow {
+            emit(value)
+        }
     }
 }
