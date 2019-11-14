@@ -38,8 +38,13 @@ jobs:
             - ~/.gradle
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
-      # run tests!
-      - run: gradle test
+      # just compile
+      - run ./gradlew compileKotlin
 
       # lint
-      - run: gradle detekt
+      - run: ./gradlew detekt
+
+      # change test sources - use solutions instead of stub methods
+      - run: ./make-test-pass.sh
+      # run tests!
+      - run: ./gradlew test
