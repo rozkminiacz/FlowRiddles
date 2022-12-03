@@ -11,6 +11,7 @@ object Riddle5Solution {
      * negate value previously emitted by your Flow.
      */
     fun solve(initialValue: Boolean, source: Flow<Unit>): Flow<Boolean> {
+        // 'scan' is an alias for 'runningFold'
         return source.scan(initial = initialValue, operation = { previousValue, _ ->
             previousValue.not()
         })

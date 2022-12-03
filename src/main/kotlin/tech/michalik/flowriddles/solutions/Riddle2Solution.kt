@@ -11,7 +11,7 @@ object Riddle2Solution {
      */
     fun solve(source: Flow<Int>): Flow<Int> {
         return source.map {
-            it.inc()
+            it.inc()  // or `it + 1`
         }
     }
 }

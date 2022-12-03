@@ -13,4 +13,6 @@ object Riddle9Solution {
             value?.let { emit(it) } ?: throw IllegalArgumentException()
         }
     }
+
+    // `flow { emit(value ?: throw IllegalArgumentException()) }`
 }

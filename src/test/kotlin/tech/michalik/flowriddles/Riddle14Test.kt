@@ -1,12 +1,13 @@
 package tech.michalik.flowriddles
 
-import io.kotlintest.assertSoftly
-import io.kotlintest.matchers.collections.shouldContainInOrder
-import io.kotlintest.matchers.collections.shouldHaveSize
-import io.kotlintest.specs.StringSpec
+import io.kotest.assertions.assertSoftly
+import io.kotest.core.spec.style.StringSpec
+import io.kotest.matchers.collections.shouldContainInOrder
+import io.kotest.matchers.collections.shouldHaveSize
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.toList
+import kotlinx.coroutines.test.currentTime
 import kotlinx.coroutines.test.runBlockingTest
 
 class Riddle14Test : StringSpec({

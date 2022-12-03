@@ -12,4 +12,10 @@ object Riddle4Solution {
     fun solve(list: List<Int>): Flow<Int> {
         return list.asFlow()
     }
+
+    /* Same as:
+    flow {
+        list.forEach { emit(it) }
+    }
+     */
 }

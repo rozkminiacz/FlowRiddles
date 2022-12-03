@@ -10,6 +10,6 @@ object Riddle3Solution {
      * Use case: You want to filter certain items out.
      */
     fun solve(source: Flow<Int>): Flow<Int> {
-        return source.filter { it % 2 == 0 }
+        return source.filter { it % 2 == 0 }  // `return source.filterNot { it % 2 == 1 }`
     }
 }

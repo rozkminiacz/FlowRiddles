@@ -12,4 +12,6 @@ object Riddle6Solution {
             a + b
         })
     }
+
+    // works too: `source1.combine(source2) { a, b -> a + b }`
 }
