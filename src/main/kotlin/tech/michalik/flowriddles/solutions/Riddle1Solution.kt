@@ -14,4 +14,6 @@ object Riddle1Solution {
             emit(value)
         }
     }
+
+    // same as `fun solve(value: Int): Flow<Int> = flow { emit(value) }`
 }

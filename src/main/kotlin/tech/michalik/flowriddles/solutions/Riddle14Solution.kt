@@ -14,4 +14,13 @@ object Riddle14Solution {
             delay(10)
         }
     }
+
+    /* if you build your own flow:
+    flow {
+        source.collect {
+            delay(10.milliseconds)
+            emit(it)
+        }
+    }
+     */
 }

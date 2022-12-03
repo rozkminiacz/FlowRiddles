@@ -10,4 +10,13 @@ object Riddle11Solution {
     fun solve(transformation: suspend (Int) -> Flow<String>, source: Flow<Int>): Flow<String> {
         return source.flatMapLatest(transformation)
     }
+
+    /* same as:
+    flow {
+        source.collect {
+            val res = transformation(it)
+            emitAll(res)
+        }
+    }
+     */
 }

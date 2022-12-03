@@ -12,7 +12,7 @@ object Riddle13Solution {
         return flow {
             repeat(21) {
                 emit(it)
-                delay(20)
+                delay(20)   // `delay(20.milliseconds)`
             }
         }
     }

@@ -12,4 +12,6 @@ object Riddle12Solution {
     fun solve(source: Flow<Unit>): Flow<Unit> {
         return source.sample(300)
     }
+
+    // `return source.sample(300.milliseconds)`
 }
