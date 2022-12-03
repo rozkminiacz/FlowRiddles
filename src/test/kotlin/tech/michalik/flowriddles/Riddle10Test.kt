@@ -1,7 +1,7 @@
 package tech.michalik.flowriddles
 
-import io.kotlintest.matchers.collections.shouldHaveSize
-import io.kotlintest.specs.StringSpec
+import io.kotest.core.spec.style.StringSpec
+import io.kotest.matchers.collections.shouldHaveSize
 import kotlinx.coroutines.flow.toList
 
 class Riddle10Test: StringSpec({

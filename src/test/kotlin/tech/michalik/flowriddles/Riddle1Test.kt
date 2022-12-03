@@ -1,7 +1,7 @@
 package tech.michalik.flowriddles
 
-import io.kotlintest.shouldBe
-import io.kotlintest.specs.StringSpec
+import io.kotest.core.spec.style.StringSpec
+import io.kotest.matchers.shouldBe
 import kotlinx.coroutines.flow.toList
 
 class Riddle1Test : StringSpec({
